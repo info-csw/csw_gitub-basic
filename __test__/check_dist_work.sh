@@ -7,7 +7,7 @@ EXTRA_HTML=$(find . -maxdepth 1 -type f -name "*.html" ! -name ".html")
 if [ -n "$EXTRA_HTML" ]; then
   echo "❌ Des fichiers .html ont été trouvés à la racine :"
   echo "$EXTRA_HTML"
-  echo "   Toute la page doit se trouver dans dist/index.html."
+  echo "   Toute les pages doivent se trouver dans dist/ ou des sous-répertoires."
   exit 1
 fi
 
