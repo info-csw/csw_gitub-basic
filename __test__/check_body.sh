@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-FILE="dist/index.html"
+FILE="src/index.html"
 
 # vérifier qu'au moins une balise de contenu existe
 if ! grep -qiE "<(h1|h2|p)[^>]*>" "$FILE"; then
